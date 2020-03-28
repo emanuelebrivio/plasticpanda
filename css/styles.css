@@ -1,6 +1,49 @@
 html,
 body {
+  height: 100%;
+  width: 100%;
+
   margin: 0;
   padding: 0;
   background: #fffaf8;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 400;
+  color: #585454;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding-bottom: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #ff8737;
+  font-weight: 500;
+}
+
+.say-hi {
+  position: relative;
+  display: block;
+  width: 238px;
+  margin: 80px auto 20px auto;
+}
+.say-hi.hi::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: url("../img/say-hi.svg") center no-repeat;
+  height: 50px;
+  width: 50px;
+  top: -50px;
+  left: 45px;
 }

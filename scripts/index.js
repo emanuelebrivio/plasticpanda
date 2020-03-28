@@ -1,8 +1,11 @@
 (function() {
   var mail = document.getElementById("email");
-  var logo = document.getElementById("logo");
+  var sayHi = document.querySelector(".say-hi");
 
   mail.addEventListener("mouseenter", function() {
-    console.log("Enter");
+    sayHi.classList.add("hi");
+  });
+  mail.addEventListener("mouseleave", function() {
+    sayHi.classList.remove("hi");
   });
 })();
